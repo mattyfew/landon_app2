@@ -55,6 +55,26 @@ class ClientController extends Controller
 
         $data['titles'] = $this->titles;
         $data['modify'] = 0;
+
+        if ($request->isMethod('post'))
+        {
+            // dd($data); // debugging
+
+            $this->validate(
+                $request,
+                [
+                    'name' => 'required|min:5',
+                    'last_name' => 'required',
+                    'address' => 'required',
+                    'zip_code' => 'required',
+                    'city' => 'required',
+                    'state' => 'required',
+                    'email' => 'required'
+                ]
+            );
+            return redirect('clients');
+        }
+
         return view('client/form', $data);
     }
 
