@@ -1,17 +1,19 @@
 @extends('layouts.app')
 
 @section('content')
+<h1>FUCK YOU</h1>
 <div class="row">
       <div class="medium-12 large-12 columns">
         <h4>New Client</h4>
         <form action="/clients/new" method="post">
           <div class="medium-4  columns">
-            <label>Title</label>
-            <select name="form[title]">
+            <label>FICL</label>
+            <!-- <select name="form[title]">
                  @foreach( $titles as $title)
                     <option value="{{ $title }}">{{ $title }}.</option>
                  @endforeach
-            </select>
+            </select> -->
+            <input name="form[title]" type="text">
           </div>
           <div class="medium-4  columns">
             <label>Name</label>

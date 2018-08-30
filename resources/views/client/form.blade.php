@@ -7,7 +7,7 @@
         <form action="{{ $modify == 1? route('update_client', [ 'client_id' => 1 ] ) : route('create_client') }}" method="post">
           <div class="medium-4  columns">
             <label>Title</label>
-            <select name="form[title]">
+            <select name="title">
                  @foreach( $titles as $title)
                     <option value="{{ $title }}">{{ $title }}.</option>
                  @endforeach

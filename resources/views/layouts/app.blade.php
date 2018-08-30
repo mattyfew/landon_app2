@@ -25,11 +25,11 @@
     <!-- End Top Bar -->
 
     <br>
-    
-    
-    
+
+
+
 @yield('content')
-    
+
 
     <div class="row column">
       <hr>
@@ -38,21 +38,21 @@
       </ul>
     </div>
 
-    <script>
-      $(document).foundation();
-    </script>
 
         <script src="{{ asset('js/vendor/jquery.js') }}"></script>
-        <script src="{{ asset('js/vendor/what-input.js') }}"></script>
         <script src="{{ asset('js/vendor/foundation.js') }}"></script>
+        <script>
+        $(document).foundation();
+        </script>
+        <script src="{{ asset('js/vendor/what-input.js') }}"></script>
         <script src="{{ asset('js/app.js') }}"></script>
         <script src="{{ asset('pickadate/lib/picker.js') }}"></script>
         <script src="{{ asset('pickadate/lib/picker.date.js') }}"></script>
         <script>
             $('.datepicker').pickadate(
-              { 
+              {
                 format: 'yyyy-mm-dd',
-                formatSubmit: 'yyyy-mm-dd' 
+                formatSubmit: 'yyyy-mm-dd'
               }
               );
         </script>
